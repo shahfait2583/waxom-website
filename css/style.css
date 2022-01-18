@@ -1,0 +1,558 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    line-height: 0.8;
+}
+.back-to-top{
+    position: fixed;
+    content: "";
+    right: 30px;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+    background: #c7b299;
+    z-index: 999999;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+}
+.back-to-top i{
+    font-size: 20px;
+    color: #000;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+    padding-right: 20px;
+    transition: all linear 0.3s;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: #c7b299;
+}
+
+.navbar{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+/* Banner part gose here */
+#banner{
+    background: url(../images/web-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#banner::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(17, 17, 17, 0.705);
+    width: 100%;
+    content: '';
+    height: 100%;
+}
+.banner-main{
+    position: relative;
+    z-index: 99;
+}
+.banner-text{
+    height: 100vh;
+}
+.banner-contant h3{
+     color: #fff;
+     font-size: 36px;
+     font-weight: 500;
+     font-family: 'Raleway', sans-serif;
+     padding-bottom: 12px;
+
+}
+.banner-contant h1{
+    color: #fff;
+     font-size: 52px;
+     font-weight: 800;
+     font-family: 'Raleway', sans-serif;
+     padding-bottom: 23px;
+     cursor: pointer;
+}
+.banner-contant p{
+    color: #fff;
+     font-size: 16px;
+     font-weight: 300;
+     font-family: 'Montserrat', sans-serif;
+     line-height: 24px;
+     padding-bottom: 46px;
+}
+.banner-contant a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 20px 36px;
+    background: #998675;
+    border-radius: 3px;
+    border-bottom: 3px solid #736357;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+}
+/* Banner part gose here */
+
+/* service part gose here */
+#service{
+    padding-top: 67px;
+    padding-bottom: 100px;
+}
+.service-card i {
+    font-size: 46px;
+    color: #555555;
+    transition: all linear 0.3s
+}
+.service-card h3{
+    font-size: 22px;
+    color: #555555;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    padding-top: 20px;
+    transition: all linear 0.3s;
+    cursor: pointer;
+
+}
+.service-card p{
+    font-size: 14px;
+    color: #8c8c8c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 24px;
+    position: relative;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+.service-card p::after{
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 3px;
+    background: #f1eee9;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all linear 0.3s
+}
+.service-card:hover i{
+    color: #c7b299;
+}
+.service-card:hover h3{
+    color: #c7b299;
+}
+.service-card:hover p::after{
+    background-color: #c7b299;
+}
+
+/* service part gose here */
+/* projects part gose here */
+#project .head h2{
+    color: #555555;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+#project .head p{
+    color: #8c8c8c;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 28px;
+    padding-top: 20px;
+}
+.nav-tabs .nav-link {
+    margin: 0 5px;
+    padding:10px 17px;
+    border: 1px solid #ebebeb;
+    background-color: transparent;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #8c8c8c;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: #998675;
+    border-radius: 3px;
+    color: #fff;
+}
+.nav-tabs .all-btn {
+    padding:10px 26px;
+}
+.card {
+    background-color: #fbfaf8;
+    margin-bottom: 24px;
+}
+.card-body {
+	padding: 30px 30px;
+    transition: all linear .3s;
+}
+.card-title {
+    font-size: 20px;
+    color: #c7b299;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.card-text {
+    font-size: 14px;
+    color: #d1d1d1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: capitalize;
+    padding-top: 8px;
+}
+.card-img {
+    position: relative;
+}
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.7);
+    opacity: 0;
+    transform: scale(0);
+    transition: all linear .3s;
+}
+.card-icon i {
+    font-size: 26px;
+    color: #fff;
+    margin: 0 15px;
+    transition: all linear .3s;
+    cursor: pointer;
+}
+#project .card-icon i:hover {
+    color: #c7b299;
+}
+#project .card:hover .card-overlay {
+    opacity: 1;
+    transform: scale(1);
+}
+#project .card:hover .card-body {
+    background-color: #362f2d;
+}
+#project .card:hover .card-body .card-title {
+    color: #fff;
+}
+#project .card:hover .card-body .card-text {
+    color: #c7b299;
+}
+.load-btn {
+    padding-top: 40px;
+}
+.load-btn a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #998675;
+    padding:20px 38px;
+    border-radius: 3px;
+    border-bottom: 3px solid #736357;
+}
+/* projects part gose here */
+#video-banner{
+    background-image: url(../images/video-banner.jpg);
+    padding-top: 218px;
+    padding-bottom: 230px;
+    position: relative;
+    margin-top: 100px;
+}
+#video-banner::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(17, 17, 17, 0.5);
+    width: 100%;
+    content: '';
+    height: 100%;
+}
+.video-text{
+   position: relative;
+   z-index: 999;
+}
+.video-text i{
+    font-size: 80px;
+    color: #fff;
+    padding-bottom: 42px;;
+}
+.video-text h2{
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.video-text p{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 28px;
+    text-transform: capitalize;
+}
+/* counter part gose here */
+#counter{
+    background-image: linear-gradient(to right, #211b19, #4e3427);
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
+.counter-text i{
+    color: #c7b299;
+    font-size: 45px;
+    padding-bottom: 24px;
+}
+.counter-text h2{
+    color: #fff;
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+.counter-text p{
+    color: #c7b299;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-top: 13px;;
+}
+
+
+/* counter part gose here */
+
+/* Blog part gose here */
+#blog{
+    padding-top: 92px;
+    padding-bottom: 92px;
+}
+
+.blog-head h2{
+    font-size: 30px;
+    color: #555555;
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
+.blog-head p{
+    font-size: 16px;
+    color: #8c8c8c;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 28px;
+    padding-bottom: 16px;
+}
+.blog-card{
+    border: 2px solid #f8f8f8;
+    transition: all linear 0.3s;
+}
+.blog-image{
+    position: relative;
+}
+.blog-image::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.7) ;
+    content: '';
+    opacity: 0;
+}
+.blog-image:hover::before{
+    opacity: 1;
+    transition: all linear 0.3s;
+}
+.blog-card:hover{
+    background: #362f2d;
+    transition: all linear 0.3s;
+}
+.blog-card h3{
+    padding-top: 30px;
+    font-size: 20px;
+    padding-left: 30px;
+    color: #555555;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.blog-card:hover h3{
+    color: #c7b299;
+    transition: all linear 0.3s;
+}
+.blog-card p{
+    font-size: 14px;
+    padding-left: 30px;
+    color: #8c8c8c;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 12px;
+    line-height: 22px;
+}
+.blog-card:hover p{
+    color: #fff;
+    transition: all linear 0.3s;
+}
+.blog-card h5{
+    font-size: 14px;
+    padding-left: 30px;
+    color: #c7b299;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 23px;
+}
+.blog-card:hover h5{
+    color: #c7b299;
+    transition: all linear 0.3s;
+}
+/* Blog part gose here */
+#footer{
+    background-color: #191919;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.footer-text1 p {
+    font-size: 14px;
+    color: #555555;
+    line-height: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    padding-top: 24px;
+}
+.footer-text1 a{
+    font-size: 14px;
+    color: #d1d1d1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+}
+.footer-text1:hover a{
+    color: #c7b299;
+}
+.footer-text2 h3{
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    text-transform: capitalize;
+    padding-bottom: 23px;
+
+}
+.para h5{
+    font-size: 12px;
+    color: #363636;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    padding-bottom: 3px;
+    transition: all linear 0.3s;
+    
+}
+.para:hover h5{
+    color: #fff;
+}
+.para p{
+    font-size: 14px;
+    color: #555555;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #252525;
+    text-align: left;
+    transition: all linear 0.3s;
+    
+}
+.para:hover p{
+    color: #bfab93;
+}
+.pro2 p{
+    border-bottom: none;
+}
+.para2 p{
+    font-size: 14px;
+    color: #555555;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 20px; 
+}
+.para2:hover p{
+    color: #bfab93;
+}
+.para2 span{
+    color: #00bff3;
+}
+.para2 h5{
+    padding-bottom: 15px;
+    border-bottom: 2px solid #252525;
+    text-align: left;
+    transition: all linear 0.3s;
+    font-size: 12px;
+    color: #363636;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+.para2:hover h5{
+    color: #fff;
+}
+.pro h5{
+    border-bottom: none;
+}
+
+.footer-image{
+    padding-bottom: 20px;
+}
+
+#foot{
+    background-color: #111111;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.foot p{
+    color: #555555;
+    font-size: 14px;
+}
+.foot span{
+    color: #c7b299;
+}
+.foot2 p{
+    color: #555555;
+    font-size: 14px;
+    text-align: right;
+}
+.foot2 span{
+    color: #959595;
+}
+
+
+
+
+
+
